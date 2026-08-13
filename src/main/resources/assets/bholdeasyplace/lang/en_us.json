@@ -1,0 +1,7 @@
+{
+  "bholdeasyplace.generic.name.holdEasyPlace": "Hold Easy Place Mode",
+  "bholdeasyplace.generic.comment.holdEasyPlace": "Continuously triggers Easy Place without holding the use key.\nRequires Easy Place mode to be enabled.",
+  "bholdeasyplace.generic.prettyName.holdEasyPlace": "Hold Easy Place Mode",
+  "bholdeasyplace.hotkey.name.holdEasyPlaceToggle": "Toggle Hold Easy Place",
+  "bholdeasyplace.hotkey.comment.holdEasyPlaceToggle": "Toggles Hold Easy Place mode on/off"
+}

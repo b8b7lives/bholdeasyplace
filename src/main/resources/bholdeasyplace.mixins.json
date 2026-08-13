@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "com.b8b7.bholdeasyplace.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "MixinLitematicaGenericConfigs",
+    "MixinLitematicaHotkeys",
+    "WorldUtilsInvoker"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

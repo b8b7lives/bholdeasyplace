@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "bholdeasyplace",
+  "name": "bHold Easy Place",
+  "version": "${version}",
+  "description": "Keeps Litematica's Easy Place running without holding the use key. 26.x continuation of Hold-Easy-Place by shane0411 (MIT).",
+  "authors": [
+    "shane0411",
+    "b8b7"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/bhold-easy-place",
+    "sources": "https://github.com/b8b7lives/bholdeasyplace",
+    "issues": "https://github.com/b8b7lives/bholdeasyplace/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/bholdeasyplace/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.b8b7.bholdeasyplace.HoldEasyPlaceClient"
+    ]
+  },
+  "mixins": [
+    "bholdeasyplace.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.0",
+    "minecraft": ">=26.2",
+    "fabric-api": "*",
+    "malilib": "*",
+    "litematica": "*"
+  },
+  "breaks": {
+    "holdeasyplace": "*"
+  }
+}
