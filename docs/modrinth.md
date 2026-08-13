@@ -17,7 +17,7 @@ form from this file top to bottom.
 | License | MIT |
 | Source | https://github.com/b8b7lives/bholdeasyplace |
 | Issues | https://github.com/b8b7lives/bholdeasyplace/issues |
-| Icon | `icon/bhep-icon-512.png` (512x512, under Modrinth's limit) |
+| Icon | `icon/bholdeasyplace-handmade-icon.png` (512x512, 27KB, under Modrinth's 256KB cap) |
 
 ## Description (paste as the body)
 
