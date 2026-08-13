@@ -1,7 +1,7 @@
-# Modrinth listing kit
+# Modrinth listing source
 
-Everything needed to create the Modrinth project by hand. Fill the web
-form from this file top to bottom.
+Canonical source for the text on the Modrinth listing. Edit here first,
+then apply to the listing.
 
 ## Project settings
 
@@ -66,15 +66,15 @@ Source on [GitHub](https://github.com/b8b7lives/bholdeasyplace), MIT.
 
 ---
 
-## First version upload
+## Version upload defaults
 
 | Field | Value |
 |---|---|
-| File | `build/libs/bholdeasyplace-0.3.1+26.2.jar` |
-| Version number | 0.3.1+26.2 |
-| Version title | bHold Easy Place 0.3.1 |
 | Channel | Release |
 | Loaders | Fabric |
 | Game versions | 26.2 |
-| Dependencies | Litematica (required), malilib (required), Fabric API (required) |
-| Changelog | Paste the 0.3.0 + 0.2.0 sections from CHANGELOG.md |
+| Dependencies | Litematica (required), malilib (required), Fabric API (required), Hold Easy Place (incompatible) |
+| Changelog | The matching section from CHANGELOG.md |
+
+Publishable via the Modrinth API (project id `8srTTqwk`); dependency
+project ids are on any existing version.
