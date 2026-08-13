@@ -3,3 +3,6 @@
 build/
 run/
 libs/*.jar
+
+# local Claude context, not in the public repo
+CLAUDE.md
