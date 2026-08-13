@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.3.1+26.2 (2026-08-13)
+
+- Replaced the icon with the handmade version (the 0.3.0 icon export
+  exceeded Modrinth's icon size cap).
+- Marked the two extended Litematica config lists `@Mutable`, removing
+  two cosmetic "@Final field should be final" warnings at startup.
+
 ## 0.3.0+26.2 (2026-08-13)
 
 - Renamed to **bHold Easy Place** (mod id `bholdeasyplace`) for the

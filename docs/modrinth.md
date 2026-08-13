@@ -70,9 +70,9 @@ Source on [GitHub](https://github.com/b8b7lives/bholdeasyplace), MIT.
 
 | Field | Value |
 |---|---|
-| File | `build/libs/bholdeasyplace-0.3.0+26.2.jar` |
-| Version number | 0.3.0+26.2 |
-| Version title | bHold Easy Place 0.3.0 |
+| File | `build/libs/bholdeasyplace-0.3.1+26.2.jar` |
+| Version number | 0.3.1+26.2 |
+| Version title | bHold Easy Place 0.3.1 |
 | Channel | Release |
 | Loaders | Fabric |
 | Game versions | 26.2 |
