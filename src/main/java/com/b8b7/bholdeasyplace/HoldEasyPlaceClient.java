@@ -10,17 +10,42 @@ import fi.dy.masa.malilib.hotkeys.KeyCallbackToggleBooleanConfigWithMessage;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.minecraft.client.Minecraft;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class HoldEasyPlaceClient implements ClientModInitializer {
+    public static final Logger LOGGER = LoggerFactory.getLogger("bholdeasyplace");
+
     @Override
     public void onInitializeClient() {
         ConfigsExt.HOLD_EASY_PLACE_TOGGLE.getKeybind()
                 .setCallback(new KeyCallbackToggleBooleanConfigWithMessage(ConfigsExt.HOLD_EASY_PLACE));
 
         ClientTickEvents.END_CLIENT_TICK.register(HoldEasyPlaceClient::onEndTick);
+        // separate registration: the watchdog must run with screens open,
+        // which onEndTick's early return excludes
+        ClientTickEvents.END_CLIENT_TICK.register(Watchdog::clientTick);
+
+        if (Boolean.getBoolean("bholdeasyplace.loadcheck")) {
+            LOGGER.info("bholdeasyplace loadcheck PASS");
+        }
     }
 
+    private static boolean tickFailed = false;
+
     private static void onEndTick(Minecraft mc) {
+        if (tickFailed || !CompatCheck.ok()) {
+            return;
+        }
+        try {
+            tickBody(mc);
+        } catch (Throwable t) {
+            tickFailed = true;
+            LOGGER.warn("bhold: tick handler failed, hold easy place disabled this session", t);
+        }
+    }
+
+    private static void tickBody(Minecraft mc) {
         if (mc.player == null || mc.gui.screen() != null) {
             return;
         }

@@ -2,6 +2,19 @@
   "bholdeasyplace.generic.name.holdEasyPlace": "Hold Easy Place Mode",
   "bholdeasyplace.generic.comment.holdEasyPlace": "Continuously triggers Easy Place without holding the use key.\nRequires Easy Place mode to be enabled.",
   "bholdeasyplace.generic.prettyName.holdEasyPlace": "Hold Easy Place Mode",
+  "bholdeasyplace.generic.name.lenientItemMatch": "Lenient Item Match",
+  "bholdeasyplace.generic.comment.lenientItemMatch": "Lets Easy Place accept server custom items.\nAn item counts as a match when its base item is right.\nItems that need exact data, like filled shulkers, stay exact.",
+  "bholdeasyplace.generic.prettyName.lenientItemMatch": "Lenient Item Match",
+  "bholdeasyplace.generic.name.skipPickBlockWhenHeld": "Skip Pick Block When Held",
+  "bholdeasyplace.generic.comment.skipPickBlockWhenHeld": "If what you hold already matches the target,\nEasy Place leaves your hotbar alone.",
+  "bholdeasyplace.generic.prettyName.skipPickBlockWhenHeld": "Skip Pick Block When Held",
+  "bholdeasyplace.generic.name.protectCustomStacks": "Protect Custom Items",
+  "bholdeasyplace.generic.comment.protectCustomStacks": "Pick block never moves another item into a slot\nthat holds a server custom item.",
+  "bholdeasyplace.generic.prettyName.protectCustomStacks": "Protect Custom Items",
+  "bholdeasyplace.generic.name.customItemLossWatchdog": "Custom Item Loss Watchdog",
+  "bholdeasyplace.generic.comment.customItemLossWatchdog": "Warns when a server custom item leaves your inventory\nand is not given back within two seconds.\nThe warning and the log line carry a timestamp for tickets.",
+  "bholdeasyplace.generic.prettyName.customItemLossWatchdog": "Custom Item Loss Watchdog",
   "bholdeasyplace.hotkey.name.holdEasyPlaceToggle": "Toggle Hold Easy Place",
-  "bholdeasyplace.hotkey.comment.holdEasyPlaceToggle": "Toggles Hold Easy Place mode on/off"
+  "bholdeasyplace.hotkey.comment.holdEasyPlaceToggle": "Toggles Hold Easy Place mode on/off",
+  "bholdeasyplace.message.watchdog_loss": "§c%s was not given back after leaving your inventory. Possible item loss at %s.§r"
 }

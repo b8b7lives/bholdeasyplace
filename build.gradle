@@ -21,6 +21,21 @@ dependencies {
 	compileOnly files('libs/malilib-fabric-26.2-0.29.3.jar')
 }
 
+// production jar + real modlist under xvfb; see harness/run-loadcheck.sh
+tasks.register('runLoadCheck', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+	def stackRoot = file(project.findProperty('fullstackDir') ?: '../minecraft/.fullstack')
+	def stackDir = new File(stackRoot, 'mods')
+	mods.from(layout.buildDirectory.file("libs/bholdeasyplace-${project.version}.jar"))
+	dependsOn 'build'
+	if (stackDir.exists()) {
+		// snapshot carries the deployed copy of this mod; the built jar is already on the list
+		mods.from(fileTree(stackDir) { include '*.jar'; exclude 'bholdeasyplace-*.jar' })
+	}
+	runDir = file('harness/run')
+	useXVFB = true
+	jvmArgs.add('-Dbholdeasyplace.loadcheck=true')
+}
+
 processResources {
 	inputs.property 'version', project.version
 	filesMatching('fabric.mod.json') { expand 'version': project.version }

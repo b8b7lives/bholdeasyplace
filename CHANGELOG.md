@@ -1,5 +1,25 @@
 # Changelog
 
+## 0.4.0+26.2 (2026-08-22)
+
+- Custom item server support. Easy place now accepts server custom
+  items such as infinite blocks. Litematica's misplacement guard
+  demanded exact item data on the held stack while the rest of easy
+  place matched by base item, so any custom item failed and clicks on
+  existing blocks were cancelled. When the schematic wants a plain
+  block, the guard now matches by base item. Items that need exact
+  data, like filled shulkers, stay exact. The toggle is named Lenient Item Match.
+- Easy place leaves your hotbar alone when what you hold already
+  matches the target. The toggle is named Skip Pick Block When Held.
+- Pick block never moves another item into a slot holding a server
+  custom item. The toggle is named Protect Custom Items.
+- New watchdog warns when a server custom item leaves your inventory
+  and is not given back within two seconds, with a timestamped log
+  line for lost item tickets. Detection only, the loss itself happens
+  server side. The toggle is named Custom Item Loss Watchdog.
+- New loadcheck harness, the production jar now boots against the full
+  play modlist in CI before any release.
+
 ## 0.3.1+26.2 (2026-08-13)
 
 - Replaced the icon with the handmade version (the 0.3.0 icon export

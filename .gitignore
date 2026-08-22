@@ -6,3 +6,7 @@ libs/*.jar
 
 # local Claude context, not in the public repo
 CLAUDE.md
+
+# repo-local only
+harness/run/
+harness/artifacts/
