@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "id": "bholdeasyplace",
-  "name": "bHold Easy Place",
+  "name": "bHold easyPlace",
   "version": "${version}",
-  "description": "Keeps Litematica's Easy Place running without holding the use key. 26.x continuation of Hold-Easy-Place by shane0411 (MIT).",
+  "description": "Keeps Litematica's Easy Place running without holding the use key, and makes it work with server custom items. 26.x continuation of Hold-Easy-Place by shane0411 (MIT).",
   "authors": [
     "shane0411",
     "b8b7"

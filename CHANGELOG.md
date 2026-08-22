@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.5.0+26.2 (2026-08-22)
+
+- New icon, a hold ring in the mod's red on the dark background.
+- New banner art for the repo and listing.
+- Display name is now bHold easyPlace. The mod id and your configs are
+  unchanged.
+
 ## 0.4.1+26.2 (2026-08-22)
 
 - Fix, the loss watchdog no longer false alarms on infinite blocks and

@@ -1,13 +1,16 @@
-# bHold Easy Place
+![bHold easyPlace](gallery/banner.webp)
+
+# bHold easyPlace
 
 A [Litematica](https://modrinth.com/mod/litematica) addon for Fabric that
 keeps Easy Place running every client tick, so you don't have to hold the
-use key while building from a schematic.
+use key while building from a schematic. It also makes Easy Place
+work with server custom items such as infinite blocks.
 
 This is a continuation of
 [Hold-Easy-Place](https://github.com/shane04111/Hold-Easy-Place) by
 [shane0411](https://github.com/shane04111) (MIT). The last upstream
-release (v0.1.8) supports Minecraft 1.21.x. bHold Easy Place brings the
+release (v0.1.8) supports Minecraft 1.21.x. bHold easyPlace brings the
 same idea to Minecraft 26.x, rewritten against current Litematica and
 malilib internals.
 
@@ -25,6 +28,21 @@ malilib internals.
   `easyPlacePostRewrite`).
 - Hold-mode placement failures are silent. Manual clicks keep stock
   Litematica messaging, so you still get feedback when you click.
+- **Custom item servers.** Easy Place accepts server custom items such
+  as infinite blocks when the schematic wants a plain block. Items that
+  need exact data, like filled shulkers, stay exact.
+- **Inventory safety.** Easy Place leaves your hotbar alone when what
+  you hold already matches the target, and pick block never moves
+  another item into a slot holding a server custom item.
+- **Loss watchdog.** Warns with a timestamp when a server custom item
+  leaves your inventory and is not given back within two seconds, so a
+  lost infinite block becomes a ticket with evidence instead of a
+  mystery.
+- Every feature has its own toggle in the config tab.
+
+Running EasyPlaceFix as well? On multiplayer it handles placement with
+its own settings, so also enable its nbtIgnore and loosenMode options
+for custom items there.
 
 ## Requirements
 
