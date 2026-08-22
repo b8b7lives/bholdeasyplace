@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.4.1+26.2 (2026-08-22)
+
+- Fix, the loss watchdog no longer false alarms on infinite blocks and
+  cyclers. Server custom items change their hidden data every time the
+  server gives one back or the player cycles a mode, so tracking exact
+  items produced a warning on nearly every placement. The watchdog now
+  tracks the total count of custom items instead, which survives both.
+  Warnings are also rate limited to one per thirty seconds.
+
 ## 0.4.0+26.2 (2026-08-22)
 
 - Custom item server support. Easy place now accepts server custom
