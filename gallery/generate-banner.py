@@ -16,6 +16,8 @@ FONT = '/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf'
 
 im = Image.new('RGB', (320, 160), BG)
 d = ImageDraw.Draw(im)
+# bilevel text: hard pixel edges survive the nearest upscale
+d.fontmode = '1'
 
 d.arc([22, 56, 70, 104], start=-90, end=180, fill=RED, width=7)
 d.rounded_rectangle([36, 70, 56, 90], radius=3, fill=RED)
