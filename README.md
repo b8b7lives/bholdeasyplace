@@ -36,9 +36,10 @@ malilib internals.
   another item into a slot holding a server custom item.
 - **Loss watchdog.** Warns with a timestamp when a server custom item
   leaves your inventory and is not given back within two seconds, so a
-  lost infinite block becomes a ticket with evidence instead of a
-  mystery.
-- Every feature has its own toggle in the config tab.
+  lost infinite block becomes a support ticket with evidence.
+- Every feature has its own toggle in Litematica config > Generic. The
+  toggles are named Lenient Item Match, Skip Pick Block When Held,
+  Protect Custom Items, and Custom Item Loss Watchdog.
 
 Running EasyPlaceFix as well? On multiplayer it handles placement with
 its own settings, so also enable its nbtIgnore and loosenMode options

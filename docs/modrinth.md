@@ -48,7 +48,9 @@ rewritten against current Litematica and malilib internals.
 - Warns with a timestamp when a server custom item leaves your
   inventory and is not given back within two seconds, so a lost
   infinite block becomes a support ticket with evidence.
-- Every feature has its own toggle.
+- Every feature has its own toggle in Litematica config > Generic. The
+  toggles are named Lenient Item Match, Skip Pick Block When Held,
+  Protect Custom Items, and Custom Item Loss Watchdog.
 - Stays inactive in REBUILD tool mode, while a GUI is open, and while
   you physically hold the use key, so Litematica's native handling
   keeps working normally.
