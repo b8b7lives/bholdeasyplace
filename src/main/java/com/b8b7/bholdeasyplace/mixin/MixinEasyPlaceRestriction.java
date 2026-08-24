@@ -15,7 +15,7 @@ import org.spongepowered.asm.mixin.injection.At;
  * Easy place's misplacement guard demands full component equality on the
  * held item while the rest of easy place matches by type; custom-component
  * server items (base item + name/lore/data) fail it and every vanilla-hit
- * click cancels (#1). When the required stack is a plain block item, fall
+ * click cancels. When the required stack is a plain block item, fall
  * back to the same type-only match the direct path uses. Component-bearing
  * required stacks stay strict. require = 0: failure keeps stock behavior.
  */

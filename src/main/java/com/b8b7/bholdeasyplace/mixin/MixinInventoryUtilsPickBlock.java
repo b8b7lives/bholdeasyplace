@@ -15,7 +15,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 /**
- * Two inventory-safety rules for custom-item servers (#1). Skip pick-block
+ * Two inventory-safety rules for custom-item servers. Skip pick-block
  * entirely when what is held already satisfies the target, so litematica
  * never switches away from a held custom item toward a plain stack. Never
  * pull a material into a hotbar slot occupied by a custom-component stack,

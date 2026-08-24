@@ -16,7 +16,7 @@ import java.time.format.DateTimeFormatter;
  * the TOTAL count of custom-component stacks must be conserved. A drop
  * outside a container screen that does not recover within the grace
  * window fires one timestamped warning naming the last vanished item.
- * Detection only; the loss itself is server-side (#1).
+ * Detection only; the loss itself is server-side.
  */
 public final class Watchdog {
     private static final int GRACE_TICKS = 40;

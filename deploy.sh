@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Build, archive, deploy to the play machine.
+# Build, archive, deploy to the target Minecraft client host.
 # Usage: deploy.sh [note-for-archive-filename] [--dry-run]
 set -euo pipefail
 cd "$(dirname "$0")"

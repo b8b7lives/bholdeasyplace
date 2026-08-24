@@ -5,7 +5,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
 
 /**
- * Type-only fallbacks for litematica's component-strict item checks (#1).
+ * Type-only fallbacks for litematica's component-strict item checks.
  * A required stack derived from a plain block state carries no component
  * patch; schematic block-entity data (shulker contents, banner patterns)
  * produces one, and those comparisons stay strict.
