@@ -4,7 +4,8 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 
-HOST=${HOST:-andrea}
+[ -f .deploy.env ] && . ./.deploy.env
+: "${HOST:?not set; export HOST or define it in .deploy.env (gitignored)}"
 MODS=${MODS:-'~/Minecraft/Instances/primary/minecraft/mods'}
 ARCHIVE=${ARCHIVE:-'~/Minecraft/mod-backups/holdeasyplace'}
 

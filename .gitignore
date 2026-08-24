@@ -10,3 +10,4 @@ CLAUDE.md
 # repo-local only
 harness/run/
 harness/artifacts/
+.deploy.env
