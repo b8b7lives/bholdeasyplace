@@ -9,6 +9,7 @@ once the project is approved. Edit here first, then apply.
 | Field | Value |
 |---|---|
 | Name | bHold easyPlace |
+| URL slug | `bhold-easy-place` (same as Modrinth) |
 | Class | Mods |
 | Main category | Utility & QoL |
 | Extra categories | Map and Information (optional) |
