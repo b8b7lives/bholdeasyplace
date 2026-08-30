@@ -75,7 +75,7 @@ all in Litematica config > Generic:
   item leaves your inventory and is not given back within two seconds,
   so a lost infinite block becomes a support ticket with evidence.
 
-Running EasyPlaceFix too? On multiplayer it handles placement with its
+Running [EasyPlaceFix](https://modrinth.com/mod/easyplacefix-fork) too? On multiplayer it handles placement with its
 own settings, so enable its `nbtIgnore` and `loosenMode` options for
 custom items there as well.
 

@@ -51,7 +51,7 @@ cover that:
   item leaves your inventory and is not given back within two seconds,
   so a lost infinite block becomes a support ticket with evidence.
 
-Running EasyPlaceFix as well? On multiplayer it handles placement with
+Running [EasyPlaceFix](https://modrinth.com/mod/easyplacefix-fork) as well? On multiplayer it handles placement with
 its own settings, so also enable its `nbtIgnore` and `loosenMode`
 options for custom items there.
 
