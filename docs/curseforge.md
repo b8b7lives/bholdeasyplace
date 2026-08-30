@@ -11,7 +11,7 @@ once the project is approved. Edit here first, then apply.
 | Name | bHold easyPlace |
 | URL slug | `bhold-easy-place` (same as Modrinth) |
 | Project ID | 1674844 |
-| Submitted | 2026-08-30, in moderation |
+| Approved | 2026-08-30 |
 | Class | Mods |
 | Main category | Utility & QoL |
 | Extra categories | Map and Information (optional) |
