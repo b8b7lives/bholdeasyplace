@@ -20,8 +20,8 @@ once the project is approved. Edit here first, then apply.
 | Logo | `icon/bholdeasyplace-icon-512.png` (512x512 PNG) |
 | Source | https://github.com/b8b7lives/bholdeasyplace |
 | Issues | https://github.com/b8b7lives/bholdeasyplace/issues |
-| Author Rewards | leave opted out |
-| Project Distribution Toggle | operator decision (License tab; controls third-party launcher access) |
+| Author Rewards | opted in (2026-08-30) |
+| Project Distribution Toggle | on, third-party launchers allowed (2026-08-30) |
 | Description mode | Markdown |
 
 ## Description (paste as the body, Markdown mode)
