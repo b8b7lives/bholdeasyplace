@@ -28,22 +28,28 @@ malilib internals.
   `easyPlacePostRewrite`).
 - Hold-mode placement failures are silent. Manual clicks keep stock
   Litematica messaging, so you still get feedback when you click.
-- **Custom item servers.** Easy Place accepts server custom items such
-  as infinite blocks when the schematic wants a plain block. Items that
-  need exact data, like filled shulkers, stay exact.
-- **Inventory safety.** Easy Place leaves your hotbar alone when what
-  you hold already matches the target, and pick block never moves
-  another item into a slot holding a server custom item.
-- **Loss watchdog.** Warns with a timestamp when a server custom item
-  leaves your inventory and is not given back within two seconds, so a
-  lost infinite block becomes a support ticket with evidence.
-- Every feature has its own toggle in Litematica config > Generic. The
-  toggles are named Lenient Item Match, Skip Pick Block When Held,
-  Protect Custom Items, and Custom Item Loss Watchdog.
+
+## Server custom items (optional)
+
+Some servers hand out custom items such as infinite blocks. Stock Easy
+Place refuses to place from them because the item data does not match
+the schematic exactly. Four toggles in Litematica config > Generic
+cover that:
+
+- **Lenient Item Match**: a custom item counts as a match when the
+  schematic wants the plain block. Items that need exact data, like
+  filled shulkers, stay exact.
+- **Skip Pick Block When Held**: leaves your hotbar alone when what you
+  already hold satisfies the target.
+- **Protect Custom Items**: pick block never moves another item into a
+  slot holding a custom item.
+- **Custom Item Loss Watchdog**: warns with a timestamp when a custom
+  item leaves your inventory and is not given back within two seconds,
+  so a lost infinite block becomes a support ticket with evidence.
 
 Running EasyPlaceFix as well? On multiplayer it handles placement with
-its own settings, so also enable its nbtIgnore and loosenMode options
-for custom items there.
+its own settings, so also enable its `nbtIgnore` and `loosenMode`
+options for custom items there.
 
 ## Requirements
 

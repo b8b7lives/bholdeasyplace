@@ -10,7 +10,7 @@ then apply to the listing.
 | Name | bHold easyPlace |
 | URL slug | `bhold-easy-place` |
 | Visibility | Public (goes to review queue first, typically 24-48h) |
-| Summary | Keeps Litematica's Easy Place running without holding the use key, and makes it work with server custom items. 26.x continuation of Hold-Easy-Place. |
+| Summary | Litematica Easy Place without holding the use key. Minecraft 26.x continuation of Hold-Easy-Place, with optional support for server custom items. |
 | Categories | Utility |
 | Loaders | Fabric |
 | Environments | Client-side: required; Server-side: unsupported |
@@ -25,42 +25,59 @@ then apply to the listing.
 ---
 
 Build from schematics without wearing out your right mouse button.
-**bHold easyPlace** keeps
-[Litematica](https://modrinth.com/mod/litematica)'s Easy Place mode
-firing every client tick, with no use key held.
+**bHold easyPlace** keeps [Litematica](https://modrinth.com/mod/litematica)'s
+Easy Place mode firing every client tick, with no use key held. Look at
+the schematic and the blocks go in.
 
 This is the Minecraft 26.x continuation of
 [Hold-Easy-Place](https://modrinth.com/mod/hold-easy-place) by shane0411
 (MIT). The last upstream release supports 1.21.x. This version was
 rewritten against current Litematica and malilib internals.
 
-## Features
+## How it works
 
-- Adds *Hold Easy Place Mode* to Litematica's Generic config tab and a
-  *Toggle Hold Easy Place* hotkey to its Hotkeys tab. Settings persist
-  in `litematica.json` like any other Litematica option.
-- Makes Easy Place accept server custom items such as infinite blocks
-  when the schematic wants a plain block. Items that need exact data,
-  like filled shulkers, stay exact.
-- Leaves your hotbar alone when what you hold already matches the
-  target, and pick block never moves another item into a slot holding a
-  server custom item.
-- Warns with a timestamp when a server custom item leaves your
-  inventory and is not given back within two seconds, so a lost
-  infinite block becomes a support ticket with evidence.
-- Every feature has its own toggle in Litematica config > Generic. The
-  toggles are named Lenient Item Match, Skip Pick Block When Held,
-  Protect Custom Items, and Custom Item Loss Watchdog.
-- Stays inactive in REBUILD tool mode, while a GUI is open, and while
-  you physically hold the use key, so Litematica's native handling
-  keeps working normally.
+1. Turn on Easy Place in Litematica as usual (`easyPlaceMode`).
+2. Enable **Hold Easy Place Mode** in Litematica config > Generic, or
+   bind **Toggle Hold Easy Place** in the Hotkeys tab.
+3. Aim at the schematic. Blocks place with no key held.
+
+Both settings save to `litematica.json` like any other Litematica
+option.
+
+## What to expect
+
+- Steps aside whenever Litematica should own the tick: in REBUILD tool
+  mode, while a GUI is open, and while you physically hold the use key.
 - Works with both the legacy Easy Place path and
   `easyPlacePostRewrite`.
-- Hold-mode placement failures don't spam chat. Your own clicks keep
+- Hold-mode placement failures stay out of chat. Your own clicks keep
   stock Litematica feedback.
+
+## Server custom items (optional)
+
+Some servers hand out custom items such as infinite blocks. Stock Easy
+Place refuses to place from them because the item data does not match
+the schematic exactly. bHold easyPlace adds four toggles for that,
+all in Litematica config > Generic:
+
+- **Lenient Item Match**: a custom item counts as a match when the
+  schematic wants the plain block. Items that need exact data, like
+  filled shulkers, stay exact.
+- **Skip Pick Block When Held**: leaves your hotbar alone when what you
+  already hold satisfies the target.
+- **Protect Custom Items**: pick block never moves another item into a
+  slot holding a custom item.
+- **Custom Item Loss Watchdog**: warns with a timestamp when a custom
+  item leaves your inventory and is not given back within two seconds,
+  so a lost infinite block becomes a support ticket with evidence.
+
+Running EasyPlaceFix too? On multiplayer it handles placement with its
+own settings, so enable its `nbtIgnore` and `loosenMode` options for
+custom items there as well.
 
 ## Requirements
 
+Minecraft 26.2, Fabric, plus
 [Fabric API](https://modrinth.com/mod/fabric-api),
 [malilib](https://modrinth.com/mod/malilib), and
 [Litematica](https://modrinth.com/mod/litematica). Client-side only.
