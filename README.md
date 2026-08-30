@@ -21,6 +21,10 @@ malilib internals.
   persist in `litematica.json` via Litematica's own config handler.
 - While enabled (and Litematica's `easyPlaceMode` is on), Easy Place
   fires every client tick as if you were holding the use key.
+- This is Litematica's own Easy Place, minus the held key. It is not
+  a printer. Placement uses vanilla reach, needs the target block under
+  your crosshair, and makes one placement attempt per tick. Nothing gets
+  placed behind you or through walls.
 - Stays inactive whenever Litematica should own the tick: in REBUILD
   tool mode, while a GUI is open, and while you physically hold the use
   key.

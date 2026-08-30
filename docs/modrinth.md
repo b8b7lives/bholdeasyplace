@@ -46,6 +46,10 @@ option.
 
 ## What to expect
 
+- This is Litematica's own Easy Place, minus the held key. It is not
+  a printer. Placement uses vanilla reach, needs the target block under
+  your crosshair, and makes one placement attempt per tick. Nothing gets
+  placed behind you or through walls.
 - Steps aside whenever Litematica should own the tick: in REBUILD tool
   mode, while a GUI is open, and while you physically hold the use key.
 - Works with both the legacy Easy Place path and
