@@ -2,8 +2,9 @@
 
 # bHold easyPlace
 
-Download on [Modrinth](https://modrinth.com/mod/bhold-easy-place) or
-from [GitHub releases](https://github.com/b8b7lives/bholdeasyplace/releases).
+Download on [Modrinth](https://modrinth.com/mod/bhold-easy-place),
+[CurseForge](https://www.curseforge.com/minecraft/mc-mods/bhold-easy-place), or
+[GitHub releases](https://github.com/b8b7lives/bholdeasyplace/releases).
 
 A [Litematica](https://modrinth.com/mod/litematica) addon for Fabric that
 keeps Easy Place running every client tick, so you don't have to hold the
