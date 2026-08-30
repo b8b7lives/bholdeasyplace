@@ -10,6 +10,8 @@ once the project is approved. Edit here first, then apply.
 |---|---|
 | Name | bHold easyPlace |
 | URL slug | `bhold-easy-place` (same as Modrinth) |
+| Project ID | 1674844 |
+| Submitted | 2026-08-30, in moderation |
 | Class | Mods |
 | Main category | Utility & QoL |
 | Extra categories | Map and Information (optional) |
@@ -127,7 +129,7 @@ Metadata:
   "changelog": "<matching CHANGELOG.md section>",
   "changelogType": "markdown",
   "displayName": "bHold easyPlace 0.5.0 for 26.2",
-  "gameVersions": [<ids from GET /api/game/versions for 26.2, Fabric, Client>],
+  "gameVersions": [16498, 7499, 9638, 14454],
   "releaseType": "release",
   "relations": {
     "projects": [
@@ -140,5 +142,8 @@ Metadata:
 }
 ```
 
-Game version ids: `GET https://upload.curseforge.com/api/game/versions`
-with the token; pick the entries named `26.2`, `Fabric`, and `Client`.
+Game version ids come from
+`GET https://minecraft.curseforge.com/api/game/versions` (the
+`upload.curseforge.com` host returns a stub). Each Minecraft version
+appears under three type ids; use the per-release group entry. Current:
+26.2 = 16498, Fabric = 7499, Client = 9638, Java 25 = 14454.
