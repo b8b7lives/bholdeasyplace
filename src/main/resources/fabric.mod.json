@@ -3,7 +3,7 @@
   "id": "bholdeasyplace",
   "name": "bHold easyPlace",
   "version": "${version}",
-  "description": "Keeps Litematica's Easy Place running without holding the use key, and makes it work with server custom items. 26.x continuation of Hold-Easy-Place by shane0411 (MIT).",
+  "description": "Keeps Litematica's Easy Place running without holding the use key, and looks after server custom items. 26.x continuation of Hold-Easy-Place by shane0411 (MIT).",
   "authors": [
     "shane0411",
     "b8b7"
@@ -26,10 +26,10 @@
   ],
   "depends": {
     "fabricloader": ">=0.19.0",
-    "minecraft": ">=26.2",
+    "minecraft": "~26.3",
     "fabric-api": "*",
-    "malilib": "*",
-    "litematica": "*"
+    "malilib": ">=0.30.0",
+    "litematica": ">=0.29.0"
   },
   "breaks": {
     "holdeasyplace": "*"

@@ -8,8 +8,8 @@ Download on [Modrinth](https://modrinth.com/mod/bhold-easy-place),
 
 A [Litematica](https://modrinth.com/mod/litematica) addon for Fabric that
 keeps Easy Place running every client tick, so you don't have to hold the
-use key while building from a schematic. It also makes Easy Place
-work with server custom items such as infinite blocks.
+use key while building from a schematic. It also looks after server
+custom items such as infinite blocks.
 
 This is a continuation of
 [Hold-Easy-Place](https://github.com/shane04111/Hold-Easy-Place) by
@@ -39,14 +39,11 @@ malilib internals.
 
 ## Server custom items (optional)
 
-Some servers hand out custom items such as infinite blocks. Stock Easy
-Place refuses to place from them because the item data does not match
-the schematic exactly. Four toggles in Litematica config > Generic
-cover that:
+Some servers hand out custom items such as infinite blocks. Easy Place
+places from them like any other item, but pick block can shuffle them
+around your hotbar or lose track of one. Three toggles in Litematica
+config > Generic cover that:
 
-- **Lenient Item Match**: a custom item counts as a match when the
-  schematic wants the plain block. Items that need exact data, like
-  filled shulkers, stay exact.
 - **Skip Pick Block When Held**: leaves your hotbar alone when what you
   already hold satisfies the target.
 - **Protect Custom Items**: pick block never moves another item into a
@@ -93,8 +90,8 @@ of placing blocks without holding the key is unchanged.
 jars in `libs/` with no remapping. Drop these two files in `libs/`
 first:
 
-- `litematica-fabric-26.2-0.28.4.jar` from [Litematica on Modrinth](https://modrinth.com/mod/litematica)
-- `malilib-fabric-26.2-0.29.3.jar` from [malilib on Modrinth](https://modrinth.com/mod/malilib)
+- `litematica-fabric-26.3-0.29.1.jar` from [Litematica on Modrinth](https://modrinth.com/mod/litematica)
+- `malilib-fabric-26.3-0.30.2.jar` from [malilib on Modrinth](https://modrinth.com/mod/malilib)
 
 When Litematica or malilib bump, update `libs/` and the two
 `compileOnly` lines in `build.gradle`.

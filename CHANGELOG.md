@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.5.1+26.3 (unreleased)
+
+- Minecraft 26.3 build. Needs Litematica 0.29.0 or newer and malilib
+  0.30.0 or newer. The 26.2 line stays available as 0.5.0+26.2.
+- Removed the Lenient Item Match option. Litematica's own misplacement
+  guard already accepts server custom items by base item, so the option
+  had no effect. Pick block protection and the loss watchdog are
+  unchanged.
+
 ## 0.5.0+26.2 (2026-08-22)
 
 - New icon, a hold ring in the mod's red on the dark background.

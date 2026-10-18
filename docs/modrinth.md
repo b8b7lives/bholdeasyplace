@@ -59,14 +59,11 @@ option.
 
 ## Server custom items (optional)
 
-Some servers hand out custom items such as infinite blocks. Stock Easy
-Place refuses to place from them because the item data does not match
-the schematic exactly. bHold easyPlace adds four toggles for that,
-all in Litematica config > Generic:
+Some servers hand out custom items such as infinite blocks. Easy Place
+places from them like any other item, but pick block can shuffle them
+around your hotbar or lose track of one. bHold easyPlace adds three
+toggles for that, all in Litematica config > Generic:
 
-- **Lenient Item Match**: a custom item counts as a match when the
-  schematic wants the plain block. Items that need exact data, like
-  filled shulkers, stay exact.
 - **Skip Pick Block When Held**: leaves your hotbar alone when what you
   already hold satisfies the target.
 - **Protect Custom Items**: pick block never moves another item into a

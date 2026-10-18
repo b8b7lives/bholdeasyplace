@@ -25,10 +25,6 @@ public class HoldEasyPlaceClient implements ClientModInitializer {
         // separate registration: the watchdog must run with screens open,
         // which onEndTick's early return excludes
         ClientTickEvents.END_CLIENT_TICK.register(Watchdog::clientTick);
-
-        if (Boolean.getBoolean("bholdeasyplace.loadcheck")) {
-            LOGGER.info("bholdeasyplace loadcheck PASS");
-        }
     }
 
     private static boolean tickFailed = false;
