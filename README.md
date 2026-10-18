@@ -58,10 +58,12 @@ options for custom items there.
 
 ## Requirements
 
-- Minecraft 26.2, Fabric Loader >= 0.19.0
+- Minecraft 26.3, Fabric Loader >= 0.19.0
 - [Fabric API](https://modrinth.com/mod/fabric-api)
-- [malilib](https://modrinth.com/mod/malilib)
-- [Litematica](https://modrinth.com/mod/litematica)
+- [malilib](https://modrinth.com/mod/malilib) 0.30.2 or newer
+- [Litematica](https://modrinth.com/mod/litematica) 0.29.1 or newer
+
+On Minecraft 26.2, use 0.5.0+26.2, the last release for that version.
 
 Client-side only. Remove the original Hold-Easy-Place jar if you still
 have it. This mod declares a conflict with it (`breaks`), because both

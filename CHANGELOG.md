@@ -1,13 +1,14 @@
 # Changelog
 
-## 0.5.1+26.3 (unreleased)
+## 0.5.1+26.3 (2026-10-18)
 
-- Minecraft 26.3 build. Needs Litematica 0.29.0 or newer and malilib
-  0.30.0 or newer. The 26.2 line stays available as 0.5.0+26.2.
+- Minecraft 26.3 build. Needs Litematica 0.29.1 or newer and malilib
+  0.30.2 or newer. The 26.2 line stays available as 0.5.0+26.2.
 - Removed the Lenient Item Match option. Litematica's own misplacement
-  guard already accepts server custom items by base item, so the option
-  had no effect. Pick block protection and the loss watchdog are
-  unchanged.
+  guard already matches server custom items by base item, on 26.2 as
+  well as 26.3, so the option never had an effect and the 0.4.0 note
+  describing the guard was wrong. The pick block toggles and the loss
+  watchdog are unchanged.
 
 ## 0.5.0+26.2 (2026-08-22)
 

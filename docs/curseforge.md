@@ -89,11 +89,13 @@ options for custom items there as well.
 
 ## Requirements
 
-Minecraft 26.2, Fabric, plus
+Minecraft 26.3, Fabric, plus
 [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api),
-[MaLiLib](https://www.curseforge.com/minecraft/mc-mods/malilib), and
-[Litematica](https://www.curseforge.com/minecraft/mc-mods/litematica).
-Client-side only.
+[MaLiLib](https://www.curseforge.com/minecraft/mc-mods/malilib) 0.30.2 or
+newer, and
+[Litematica](https://www.curseforge.com/minecraft/mc-mods/litematica)
+0.29.1 or newer. Client-side only. On Minecraft 26.2, use 0.5.0+26.2,
+the last release for that version.
 
 If you still have the original Hold-Easy-Place jar installed, remove
 it. This mod declares a conflict with it, because both mods would drive
@@ -125,8 +127,8 @@ Metadata:
 {
   "changelog": "<matching CHANGELOG.md section>",
   "changelogType": "markdown",
-  "displayName": "bHold easyPlace 0.5.0 for 26.2",
-  "gameVersions": [16498, 7499, 9638, 14454],
+  "displayName": "bHold easyPlace 0.5.1 for 26.3",
+  "gameVersions": [17045, 7499, 9638, 14454],
   "releaseType": "release",
   "relations": {
     "projects": [
@@ -143,4 +145,4 @@ Game version ids come from
 `GET https://minecraft.curseforge.com/api/game/versions` (the
 `upload.curseforge.com` host returns a stub). Each Minecraft version
 appears under three type ids; use the per-release group entry. Current:
-26.2 = 16498, Fabric = 7499, Client = 9638, Java 25 = 14454.
+26.3 = 17045, 26.2 = 16498, Fabric = 7499, Client = 9638, Java 25 = 14454.

@@ -9,16 +9,16 @@ then apply to the listing.
 |---|---|
 | Name | bHold easyPlace |
 | URL slug | `bhold-easy-place` |
-| Visibility | Public (goes to review queue first, typically 24-48h) |
+| Visibility | Public, approved 2026-08-30 |
 | Summary | Litematica Easy Place without holding the use key. Minecraft 26.x continuation of Hold-Easy-Place, with optional support for server custom items. |
-| Categories | Utility |
+| Categories | Utility, Game Mechanics |
 | Loaders | Fabric |
 | Environments | Client-side: required; Server-side: unsupported |
 | License | MIT |
 | Source | https://github.com/b8b7lives/bholdeasyplace |
 | Issues | https://github.com/b8b7lives/bholdeasyplace/issues |
 | Icon | `icon/bholdeasyplace-icon-512.png` (512x512, hold ring, under Modrinth's 256KB cap) |
-| Gallery | `gallery/banner.png` as the featured image, `gallery/banner-social-1280x640.png` if a smaller upload is needed |
+| Gallery | `gallery/banner.png` as the featured image (`gallery/banner-social-1280x640.png` if a smaller upload is needed), then `gallery/bhold-options.webp` (Litematica config options), `gallery/bhold-on.png` (toggling the mod on), `gallery/bhold-off.png` (toggling the mod off), `gallery/bhold-litematica-keybind.png` (Litematica hotkey) |
 
 ## Description (paste as the body)
 
@@ -78,10 +78,12 @@ custom items there as well.
 
 ## Requirements
 
-Minecraft 26.2, Fabric, plus
+Minecraft 26.3, Fabric, plus
 [Fabric API](https://modrinth.com/mod/fabric-api),
-[malilib](https://modrinth.com/mod/malilib), and
-[Litematica](https://modrinth.com/mod/litematica). Client-side only.
+[malilib](https://modrinth.com/mod/malilib) 0.30.2 or newer, and
+[Litematica](https://modrinth.com/mod/litematica) 0.29.1 or newer.
+Client-side only. On Minecraft 26.2, use 0.5.0+26.2, the last release
+for that version.
 
 If you still have the original Hold-Easy-Place jar installed, remove
 it. This mod declares a conflict with it, because both mods would drive
@@ -103,7 +105,7 @@ Source on [GitHub](https://github.com/b8b7lives/bholdeasyplace), MIT.
 |---|---|
 | Channel | Release |
 | Loaders | Fabric |
-| Game versions | 26.2 |
+| Game versions | 26.3 (0.5.0+26.2 stays listed for 26.2) |
 | Dependencies | Litematica (required), malilib (required), Fabric API (required), Hold Easy Place (incompatible) |
 | Changelog | The matching section from CHANGELOG.md |
 
