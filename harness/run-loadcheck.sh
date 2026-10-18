@@ -35,6 +35,7 @@ check "no injection errors"     'InjectionError'                                
 check "loadcheck pass marker"   'bholdeasyplace loadcheck PASS'                                      1
 check "no loadcheck failure"    'bholdeasyplace loadcheck FAIL|loadcheck: .* FAILED'                 0
 check "no client crash"         'Minecraft has crashed|Failed to start|A mod crashed'           0
+check "render backend created" 'Using graphics backend OpenGL'                                  1
 
 grep -E 'Mixin apply failed|InjectionError|was not found|Cannot resolve' "$LOG" | head -5
 exit "$fail"
